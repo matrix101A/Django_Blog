@@ -8,12 +8,12 @@ class test():
 
 
 def home(request):
-    return (HttpResponse('HEllo World'))
+    return render(request,'home/home.html')
 
 
 
 def contact(request):
-    return (HttpResponse('Contact page'))
+    return render(request,'home/contact.html')
 
 
 def about(request):
